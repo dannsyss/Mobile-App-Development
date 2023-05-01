@@ -1,20 +1,26 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <EditText
-        android:id="@+id/nameEditText"
+        android:id="@+id/name_edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your name"/>
+        android:hint="Enter your name" />
 
     <Button
-        android:id="@+id/submitBtn"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_below="@id/nameEditText"
-        android:layout_centerHorizontal="true"/>
+        android:text="Choose date" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/result_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp" />
+
+</LinearLayout>
